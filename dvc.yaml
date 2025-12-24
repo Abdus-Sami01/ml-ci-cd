@@ -1,0 +1,22 @@
+stages:
+  preprocess:
+    cmd: python D:/python files/MLops/ml-ci-cd/src/preprocess.py D:/python files/MLops/ml-ci-cd/data/raw.csv D:/python files/MLops/ml-ci-cd/data/raw_processed.csv
+    deps:
+      - D:/python files/MLops/ml-ci-cd/src/preprocess.py
+      - D:/python files/MLops/ml-ci-cd/data/raw.csv
+    outs:
+      - D:/python files/MLops/ml-ci-cd/data/raw_processed.csv
+
+  train:
+    cmd: python D:/python files/MLops/ml-ci-cd/src/train.py
+    deps:
+      - D:/python files/MLops/ml-ci-cd/src/train.py
+      - D:/python files/MLops/ml-ci-cd/data/raw_processed.csv
+      - D:/python files/MLops/ml-ci-cd/params.yaml
+    outs:
+      - D:/python files/MLops/ml-ci-cd/models/model.pkl
+  evaluate:
+    cmd: python D:/python files/MLops/ml-ci-cd/src/evaluate.py
+    deps:
+      - D:/python files/MLops/ml-ci-cd/src/evaluate.py
+      - D:/python files/MLops/ml-ci-cd/models/model.pkl

@@ -76,9 +76,10 @@ bash
 Copy code
 dvc exp run
 2️⃣ Run the automated CI/CD pipeline
-bash
-Copy code
+```bash
 python ci_cd_pipeline.py
+```
+
 This will:
 
 Run the DVC pipeline
@@ -156,5 +157,6 @@ DagsHub
 
 Author: Abdus Sami
 Date: 2025-12-24
+
 
 

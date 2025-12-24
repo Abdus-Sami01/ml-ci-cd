@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/python%20files/MLops/ml-ci-cd/mlruns/0/dea56b46fd7045d8a1fc8511e93028cc/artifacts
+end_time: 1766602125577
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: dea56b46fd7045d8a1fc8511e93028cc
+run_name: sincere-finch-310
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766602110865
+status: 3
+tags: []
+user_id: Chief

@@ -19,7 +19,8 @@ stages:
   evaluate:
     cmd: py -3 src/evaluate.py
     deps:
-      - src/evaluate.py
-      - models/model.pkl
+    - src/evaluate.py
+    - models/model.pkl
     metrics:
-      - metrics.yaml
+    - metrics.yaml
+

@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/python%20files/MLops/ml-ci-cd/mlruns/0/f7dd5b33852c48c09a89241a1c3a2ebd/artifacts
+end_time: 1766601723593
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: f7dd5b33852c48c09a89241a1c3a2ebd
+run_name: hilarious-rat-227
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766601706381
+status: 3
+tags: []
+user_id: Chief

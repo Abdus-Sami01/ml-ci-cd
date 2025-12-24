@@ -6,7 +6,7 @@ import joblib
 
 def train():
     params = yaml.safe_load(open("params.yaml"))
-    df = pd.read_csv("data/raw_processed.csv")
+    df = pd.read_csv(r"D:\python files\MLops\ml-ci-cd\data\raw_preprocessed.csv")
 
     X = df.drop("condition", axis=1)
     y = df["condition"]

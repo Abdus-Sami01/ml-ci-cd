@@ -1,7 +1,7 @@
 import pandas as pd
 
-input_path="D:\python files\MLops\ml-ci-cd\data\raw.csv"
-output_path="D:\python files\MLops\ml-ci-cd\data\raw_processed.csv"
+input_path=r"D:\python files\MLops\ml-ci-cd\data\raw.csv"
+output_path=r"D:\python files\MLops\ml-ci-cd\data\raw_processed.csv"
 
 
 def preprocess(input_path, output_path):

@@ -1,21 +1,21 @@
 stages:
   preprocess:
-    cmd: python.exe src/preprocess.py data/raw.csv data/raw_processed.csv
+    cmd: python.exe src\preprocess.py data\raw.csv data\raw_processed.csv
     deps:
-      - python src/preprocess.py
-      - data/raw.csv
+      - python src\preprocess.py
+      - data\raw.csv
     outs:
-      - data/raw_processed.csv
+      - data\raw_processed.csv
   train:
-    cmd: python src/train.py
+    cmd: python src\train.py
     deps:
-      - src/train.py
-      - data/raw_processed.csv
+      - src\train.py
+      - data\raw_processed.csv
       - params.yaml
     outs:
-      - models/model.pkl
+      - models\model.pkl
   evaluate:
-    cmd: src/evaluate.py
+    cmd: src\evaluate.py
     deps:
-      - src/evaluate.py
-      - models/model.pkl
+      - src\evaluate.py
+      - models\model.pkl

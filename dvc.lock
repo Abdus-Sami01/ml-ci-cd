@@ -45,5 +45,10 @@ stages:
       size: 1048369
     - path: src/evaluate.py
       hash: md5
-      md5: 738904e42478177a8230d3ff67f5df43
-      size: 425
+      md5: 0999b2a884cb2ae030197a283a03e08d
+      size: 542
+    outs:
+    - path: metrics.yaml
+      hash: md5
+      md5: 70bc288684fbd7650150d05cb5993ba8
+      size: 357

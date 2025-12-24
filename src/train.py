@@ -13,19 +13,21 @@ df = pd.read_csv("data/raw_processed.csv")
 X = df.drop("condition", axis=1)  # replace 'price' with your target column
 y = df["condition"]
 
-mlflow.start_run()
+with mlflow.start_run() as run:
 
-# Train model
-model = RandomForestRegressor(n_estimators=params["train"]["n_estimators"])
-model.fit(X, y)
+    # Train model
+    model = RandomForestRegressor(n_estimators=params["train"]["n_estimators"])
+    model.fit(X, y)
 
-# Log params and model
-mlflow.log_params(params["train"])
-mlflow.sklearn.log_model(model, "model")
+    # Log params and model
+    mlflow.log_params(params["train"])
+    mlflow.sklearn.log_model(model, "model")
 
-# Save model locally to match DVC output
-joblib.dump(model, "models/model.pkl")
+    # Save model locally to match DVC output
+    joblib.dump(model, "models/model.pkl")
 
-mlflow.end_run()
+    mlflow.sklearn.log_model(model, "model", registered_model_name="HeartDiseasePrediction")
 
-print("Model saved to models/model.pkl")
+    mlflow.end_run()
+
+    print("Model saved to models/model.pkl")

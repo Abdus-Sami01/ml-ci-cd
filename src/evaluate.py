@@ -4,7 +4,7 @@ from sklearn.metrics import r2_score
 import mlflow
 
 def evaluate():
-    df = pd.read_csv(r"D:/python files/MLops/ml-ci-cd/data/raw.csv")
+    df = pd.read_csv(r"data/raw.csv")
     model = joblib.load(r"models/model.pkl")
 
     X = df.drop("condition", axis=1)

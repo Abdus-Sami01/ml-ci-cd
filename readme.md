@@ -52,6 +52,7 @@ Clone the repository:
 git clone https://github.com/Abdus-Sami01/ml-ci-cd.git
 cd ml-ci-cd
 Install dependencies:
+```
 
 bash
 pip install -r requirements.txt
@@ -151,3 +152,4 @@ DagsHub
 
 Author: Abdus Sami
 Date: 2025-12-24
+

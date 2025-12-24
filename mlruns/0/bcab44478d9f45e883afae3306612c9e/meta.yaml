@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/python%20files/MLops/ml-ci-cd/mlruns/0/bcab44478d9f45e883afae3306612c9e/artifacts
+end_time: 1766599631473
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: bcab44478d9f45e883afae3306612c9e
+run_name: unique-vole-838
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766599614839
+status: 3
+tags: []
+user_id: Chief

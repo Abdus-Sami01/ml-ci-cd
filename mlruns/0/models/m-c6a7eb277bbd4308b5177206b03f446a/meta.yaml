@@ -1,0 +1,10 @@
+artifact_location: file:///D:/python%20files/MLops/ml-ci-cd/mlruns/0/models/m-c6a7eb277bbd4308b5177206b03f446a/artifacts
+creation_timestamp: 1766602448985
+experiment_id: '0'
+last_updated_timestamp: 1766602462964
+model_id: m-c6a7eb277bbd4308b5177206b03f446a
+model_type: null
+name: model
+source_run_id: e103c491cb6149ce80a62ff3513cd190
+status: 2
+status_message: null

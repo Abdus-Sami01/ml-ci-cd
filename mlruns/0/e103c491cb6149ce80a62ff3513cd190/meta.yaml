@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/python%20files/MLops/ml-ci-cd/mlruns/0/e103c491cb6149ce80a62ff3513cd190/artifacts
+end_time: 1766602463114
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e103c491cb6149ce80a62ff3513cd190
+run_name: puzzled-sheep-262
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766602448366
+status: 3
+tags: []
+user_id: Chief

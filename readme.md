@@ -51,20 +51,24 @@ Clone the repository:
 ```bash
 git clone https://github.com/Abdus-Sami01/ml-ci-cd.git
 cd ml-ci-cd
-Install dependencies:
 ```
 
-bash
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
 pip install dvc[all] mlflow scikit-learn pandas joblib
+```
+
 Initialize DVC and connect remote (if not done already):
 
-bash
+```bash
 dvc init
 dvc remote add -d storage <DagsHub_DVC_remote_URL>
 git add .dvc/config
 git commit -m "Configured DVC remote"
-
+```
 
 📊 Usage
 1️⃣ Run DVC pipeline manually
@@ -94,8 +98,7 @@ mlflow ui
 Open http://127.0.0.1:5000 to track experiments, metrics, and models.
 
 📝 Configuration
-params.yaml
-yaml
+```yaml
 Copy code
 train:
   model_type: random_forest
@@ -106,6 +109,7 @@ model_type → "random_forest" or "linear_regression"
 n_estimators → only for random forest
 
 r2_threshold → minimum R2 score for auto-promotion
+```
 
 🔄 CI/CD Workflow
 Modify code or parameters
@@ -152,4 +156,5 @@ DagsHub
 
 Author: Abdus Sami
 Date: 2025-12-24
+
 

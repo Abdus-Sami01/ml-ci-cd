@@ -72,9 +72,10 @@ git commit -m "Configured DVC remote"
 
 📊 Usage
 1️⃣ Run DVC pipeline manually
-bash
-Copy code
+```bash
 dvc exp run
+```
+
 2️⃣ Run the automated CI/CD pipeline
 ```bash
 python ci_cd_pipeline.py
@@ -93,14 +94,13 @@ Register the model in MLflow Model Registry
 Promote the model to Production if metrics meet thresholds
 
 3️⃣ MLflow UI (Local)
-bash
-Copy code
+```bash
 mlflow ui
+```
 Open http://127.0.0.1:5000 to track experiments, metrics, and models.
 
 📝 Configuration
 ```yaml
-Copy code
 train:
   model_type: random_forest
   n_estimators: 200
@@ -157,6 +157,3 @@ DagsHub
 
 Author: Abdus Sami
 Date: 2025-12-24
-
-
-

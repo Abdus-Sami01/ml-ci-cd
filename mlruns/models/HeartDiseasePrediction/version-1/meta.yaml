@@ -1,0 +1,15 @@
+creation_timestamp: 1766603175286
+current_stage: Production
+deployment_job_state: null
+description: null
+last_updated_timestamp: 1766604006822
+model_id: m-f9b1c5891d5a48358fc5dcd604a04d52
+name: HeartDiseasePrediction
+run_id: fa501508db9e49399689c33f1f00a57a
+run_link: null
+source: models:/m-f9b1c5891d5a48358fc5dcd604a04d52
+status: READY
+status_message: null
+storage_location: file:///D:/python%20files/MLops/ml-ci-cd/mlruns/0/models/m-f9b1c5891d5a48358fc5dcd604a04d52/artifacts
+user_id: null
+version: 1

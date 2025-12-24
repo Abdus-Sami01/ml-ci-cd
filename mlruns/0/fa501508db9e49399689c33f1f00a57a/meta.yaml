@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/python%20files/MLops/ml-ci-cd/mlruns/0/fa501508db9e49399689c33f1f00a57a/artifacts
+end_time: 1766603175320
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fa501508db9e49399689c33f1f00a57a
+run_name: bold-dove-614
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1766603151671
+status: 3
+tags: []
+user_id: Chief
